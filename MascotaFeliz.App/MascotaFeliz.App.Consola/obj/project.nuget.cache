@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2ThChla1a4FoYwf3yAO5nLvmVl6Dlq1z0ICDvSnBjuRKqW2QAWr+asOwmR+NEYCZqQAAzoztIxPbS/NUOycs3Q==",
+  "dgSpecHash": "Yo15ZbyZ9fcRxfnY/+ds2Scz/cfBLZAHgxRLllWeD0NmEllVyY4NvBke6h/s1XFGlmmULl+c6NaT/cdmMlh9cg==",
   "success": true,
-  "projectFilePath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Consola\\MascotaFeliz.App.Consola.csproj",
+  "projectFilePath": "C:\\Mascotas\\MascotaFeliz.App\\mascotafeliz.app.consola\\MascotaFeliz.App.Consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Juan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
