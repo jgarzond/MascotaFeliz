@@ -15,16 +15,16 @@ namespace MascotaFeliz.App.Consola
             Console.WriteLine("Hello!")
 ;            //DeleteDueno();
             //DeleteVeterinario();
-            //AddDueno();
-            //AddVeterinario();
+            AddDueno();
+            AddVeterinario();
         }
         //Métodos Dueño
         private static void AddDueno(){
             var dueno = new Dueno{
-                Nombres = "Juan",
-                Apellidos = "Sin Miedo",
-                Direccion = "Bajo un puente",
-                Telefono = "1234567891",
+                Nombres = "Juan Sebastian",
+                Apellidos = "Garzon Daleman",
+                Direccion = "Calle 7",
+                Telefono = "3058",
                 Correo = "juansinmiedo@gmail.com"
             };
             _repoDueno.AddDueno(dueno);
@@ -42,14 +42,14 @@ namespace MascotaFeliz.App.Consola
         private static void ListarDuenos(){
             var duenos = _repoDueno.GetAllDuenos();
             foreach (Dueno d in duenos){
-                Console.WriteLine(d.Nombres + " " + d.Apellidos + " " + d.Corr});
+                Console.WriteLine(d.Nombres + " " + d.Apellidos + " " + d.Correo);
             }
         }
     //Métodos Veterinario
         private static void AddVeterinario(){
             var veterinario = new Veterinario{
-                Nombres = "Juan",
-                Apellidos = "Sin Miedo",
+                Nombres = "Pepe",
+                Apellidos = "Picapiedra",
                 Direccion = "Bajo un puente",
                 Telefono = "1234567891",
                 TarjetaProfesional = "25660"
@@ -61,7 +61,7 @@ namespace MascotaFeliz.App.Consola
             //_repoVeterinario.DeleteVeterinario(3); Ingresar ID de la BD
         }
 
-        private static void BuscarVeterinario(int idVeterianrio){
+        private static void BuscarVeterinario(int idVeterinario){
             var veterinario = _repoVeterinario.GetVeterinario(idVeterinario);
             Console.WriteLine(veterinario.Nombres + " " + veterinario.Apellidos + " " + veterinario.Direccion + " " + veterinario.Telefono + " " + veterinario.TarjetaProfesional);
         }
@@ -72,8 +72,6 @@ namespace MascotaFeliz.App.Consola
                 Console.WriteLine(v.Nombres + " " + v.Apellidos + " " + v.TarjetaProfesional);
             }
         }
-        
-
 
     }
 }
