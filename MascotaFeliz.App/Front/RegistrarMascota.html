@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Mascotas</title>
-  </head>
-  
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Mascotas</title>
+</head>
+<style>
+  .formulario {
+    display: block;
+    padding: 20px;
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+</style>
+
+<body>
   <div id="cabecera">
     <!-- Aqui va una imagen; hay que subirla en la carpeta de front 
-    
-    <img src="../objetos/logo.gif" alt="Logo de la página" width="15%" /><-->
-    <h1>Registro de Mascota</h1>	
+      
+      <img src="../objetos/logo.gif" alt="Logo de la página" width="15%" /><-->
+    <h1>Registro de Mascota</h1>
     <h2>Ingrese los datos de la mascota</h2>
   </div>
-  <div id="principal">
-    <div class="seccion">
-      <p>ID Mascota: <input type="number" step=1 name="idMascota"> </p>
-      <p>Nombre: <input type="text" name="nombre" /></p>
+  <div class="formulario">
+    <form action="">
+      <!--
+<p>Nombre: <input type="text" name="nombre" /></p>
       <p>Color: <input type="text" name="color" /></p>
       <p>Especie: <input type="text" name="especie" /></p>
       <p>Raza: <input type="text" name="raza" /></p>
       <p>Dueño: <input type="text" name="dueño" /></p>
       <p>Veterinario: <input type="text" name="veterinario" /></p>
       <p>Historia: <input type="text" name="historia" /></p>
-    </div>
-    <h3>Presione para guardar el registro</h3>
-    <p><input type="submit" value="REGISTRAR"/></p>
-    <a href="PaginaPrincipal.html"><input type="button" value="INICIO"></a> 
-    
-  </body>
-</html>
 
+        -->
+      <div>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text">
+      </div>
+
+      <div>
+        <label for="color">Color</label>
+        <input id="color" type="text">
+      </div>
+
+      <div>
+        <label for="especie">Especie</label>
+        <input id="especie" type="text">
+      </div>
+
+      <div>
+        <label for="raza">Raza</label>
+        <input id="raza" type="text">
+      </div>
+
+      <div>
+        <label for="dueno">Dueño</label>
+        <input id="dueno" type="text">
+      </div>
+
+      <div>
+        <label for="veterinario">Veterinario</label>
+        <input id="veterinario" type="text">
+      </div>
+      <!--
+      <div>
+        <label for="idHistoria">No. Historia Clínica</label>
+        <input id="idHistoria" type="number">
+      </div>
+      -->
+    </form>
+  </div>
+
+  <h3>Presione para guardar el registro</h3>
+  <p><input type="submit" value="REGISTRAR" /> <a href="PaginaPrincipal.html"><input type="button" value="Inicio"></a></p>
+  
+</body>
+
+</html>

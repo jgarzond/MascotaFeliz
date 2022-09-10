@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Visita    </title>
-  </head>
-  
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Visitas</title>
+</head>
+<style>
+  .formulario {
+    display: block;
+    padding: 20px;
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+</style>
+
+<body>
   <div id="cabecera">
-    <!-- Aqui va una imagen; hay que subirla en la carpeta de front 
-    
-    <img src="../objetos/logo.gif" alt="Logo de la página" width="15%" /><-->
-    <h1>Registro de Visita</h1>	
-    <h2>Ingrese los datos de la Visita</h2>
+    <h1>Registro de Visitas a Mascotas</h1>
+    <h2>Ingrese los datos la Visita</h2>
   </div>
-  <div id="principal">
-    <div class="seccion">
-      <p>ID Visita: <input type="number"step=any name="idVisita"> </p>
-      <p>Fecha de Visita: <input type="datetime" name="fechaVisita" /></p>
-      <p>Temperatura: <input type="number" step=0.1 name="temperatura" /></p>
-      <p>Peso: <input type="text" step="0.01" name="peso" /></p>
-      <p>Frecuencia Respiratoria: <input type="text" step=1 name="frecuenciaRespiratoria" /></p>
-      <p>Frecuencia Cardiaca: <input type="text" step=1 name="frecuenciaCardiaca" /></p>
-      <p>Estado de Ánimo: <input type="text" name="estadoAnimo" /></p>
-      <p>ID Veterinario: <input type="text" step=1 name="idVeterianrio" /></p>
-      <p>Recomendaciones: <textarea  name="descripcion"></textarea></p>
-    
-    </div>
-    <h3>Presione para guardar el registro</h3>
-    <p><input type="submit" value="REGISTRAR"/></p>
-    <a href="PaginaPrincipal.html"><input type="button" value="INICIO"></a> 
-    
-  </body>
+  <div class="formulario">
+    <form action="">
+      <div>
+        <label for="fechaVisita">Fecha Visita</label>
+        <input id="fechaVisita" type="datetime">
+      </div>
+
+      <div>
+        <label for="temperatura">Temperatura</label>
+        <input id="temperatura" type="number">
+      </div>
+
+      <div>
+        <label for="peso">Peso</label>
+        <input id="peso" type="number">
+      </div>
+
+      <div>
+        <label for="frecuenciaCardiaca">Frecuencia Cardiaca</label>
+        <input id="frecuenciaCardiaca" type="number">
+      </div>
+
+      <div>
+        <label for="frecuenciaRespiratoria">Frecuencia Respiratoria</label>
+        <input id="frecuenciaRespiratoria" type="number">
+      </div>
+
+      <div>
+        <label for="idVeterianrio">ID Veterinario</label>
+        <input id="idVeterianrio" type="number">
+      </div>
+
+      <div>
+        <label for="recomendaciones">Recomendaciones</label>
+        <textarea name="recomendaciones"></textarea>
+      </div>
+
+    </form>
+  </div>
+
+  <h3>Presione para guardar el registro</h3>
+  <p><input type="submit" value="REGISTRAR" /> <a href="PaginaPrincipal.html"><input type="button" value="Inicio"></a>
+  </p>
+</body>
+
 </html>

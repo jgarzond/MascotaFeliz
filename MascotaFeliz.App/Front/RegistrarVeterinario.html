@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Mascotas</title>
-  </head>
-  
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Veterinarios</title>
+</head>
+<style>
+  .formulario {
+    display: block;
+    padding: 20px;
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+</style>
+
+<body>
   <div id="cabecera">
-    <h1>Registro</h1>	
-    <h2>Ingrese los Datos Del Veterinario</h2>
+    <h1>Registro de Veterinarios</h1>
+    <h2>Ingrese los datos de los Veterinarios</h2>
   </div>
-  <div id="principal">
-    <div class="seccion">
-      <p>ID Veterinario : <input type="number" step=1 name="idVeterinario"> </p>
-      <p>Nombre: <input type="text" name="nombre" /></p>
-      <p>Apellido: <input type="text" name="apellido" /></p>
-      <p>Dirección: <input type="text" name="direccion" /></p>
-      <p>Teléfono: <input type="text" name="telefono" /></p>
-      <p>Tarjeta Profesional: <input type="text" name="Tarjeta" /></p>
-    </div>
-    <h3>Presione para guardar el registro</h3>
-    <p><input type="submit" value="REGISTRAR"/></p>
-    <a href="PaginaPrincipal.html"><input type="button" value="INICIO"></a> 
-    
-  </body>
+  <div class="formulario">
+    <form action="">
+      <div>
+        <label for="nombres">Nombres</label>
+        <input id="nombres" type="text">
+      </div>
+
+      <div>
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" type="text">
+      </div>
+
+      <div>
+        <label for="direccion">Direccion</label>
+        <input id="direccion" type="text">
+      </div>
+
+      <div>
+        <label for="telefono">Telefono</label>
+        <input id="telefono" type="text">
+      </div>
+
+      <div>
+        <label for="telefono">Telefono</label>
+        <input id="telefono" type="text">
+      </div>
+
+      <div>
+        <label for="tarjetaProfesional">No. Tarjeta Profesional </label>
+        <input id="tarjetaProfesional" type="text">
+      </div>
+    </form>
+  </div>
+
+  <h3>Presione para guardar el registro</h3>
+  <p><input type="submit" value="REGISTRAR" /> <a href="PaginaPrincipal.html"><input type="button" value="Inicio"></a></p>
+</body>
+
 </html>
