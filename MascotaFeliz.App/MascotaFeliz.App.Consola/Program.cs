@@ -9,12 +9,14 @@ namespace MascotaFeliz.App.Consola
     {
         private static IRepositorioDueno _repoDueno = new RepositorioDueno(new Persistencia.AppContext());
         private static IRepositorioVeterinario _repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
+        private static IRepositorioMascota _repoMascota = new RepositorioMascota(new Persistencia.AppContext());
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello!")
-;            DeleteDueno();
-            DeleteVeterinario();
+;           //DeleteDueno();
+            //DeleteVeterinario();
             //AddDueno();
             //AddVeterinario();
             //BuscarDueno(4);
@@ -23,6 +25,7 @@ namespace MascotaFeliz.App.Consola
             //BuscarVeterinario(7);
             //ListarDuenos();
             //ListarVeterinarios();
+            AddMascota();
         }
         //Métodos Dueño
         private static void AddDueno(){
@@ -76,6 +79,34 @@ namespace MascotaFeliz.App.Consola
             var veterinarios = _repoVeterinario.GetAllVeterinarios();
             foreach (Veterinario v in veterinarios){
                 Console.WriteLine(v.Nombres + " " + v.Apellidos + " " + v.TarjetaProfesional);
+            }
+        }
+
+        //Métodos Mascotas
+        private static void AddMascota(){
+            var mascota = new Mascota{
+                Nombre = "Pepe",
+                Color = "Cafe",
+                Especie = "Felino",
+                Raza = "Criollo",
+            };
+            _repoMascota.AddMascota(mascota);
+        }
+
+        public static void DeleteMascota(){
+            //_repoMascota.DeleteMascota(1);    //Ingresar ID de la BD
+           
+        }
+
+        private static void BuscarMascota(int idMascota){
+            var mascota = _repoMascota.GetMascota(idMascota);
+            Console.WriteLine(mascota.Nombre + " " + mascota.Especie + " " + mascota.Raza);
+        }
+
+        private static void ListarMascotas(){
+            var mascotas = _repoMascota.GetAllMascotas();
+            foreach (Mascota m in mascotas){
+                Console.WriteLine(m.Nombre + " " + m.Especie + " " + m.Raza);
             }
         }
 

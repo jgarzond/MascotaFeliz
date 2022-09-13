@@ -23,7 +23,7 @@ namespace MascotaFeliz.App.Persistencia
             _appContext = appContext;
         }
 
-        public Dueno AddMascota(Mascota mascota)
+        public Mascota AddMascota(Mascota mascota)
         {
             var mascotaAdicionada = _appContext.Mascotas.Add(mascota);
             _appContext.SaveChanges();
@@ -72,7 +72,7 @@ namespace MascotaFeliz.App.Persistencia
                 mascotaEncontrada.Nombre = mascota.Nombre;
                 mascotaEncontrada.Color = mascota.Color;
                 mascotaEncontrada.Especie = mascota.Especie;
-                mascotaEncontrada.Raza = mascota.RAza;
+                mascotaEncontrada.Raza = mascota.Raza;
                 
                 _appContext.SaveChanges();
             }
