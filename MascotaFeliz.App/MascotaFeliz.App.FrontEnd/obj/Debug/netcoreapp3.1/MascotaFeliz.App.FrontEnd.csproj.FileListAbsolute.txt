@@ -79,5 +79,6 @@ C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\s
 C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.FrontEnd.dll
 C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.FrontEnd.pdb
 C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.FrontEnd.genruntimeconfig.cache
-C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Duenos\DetallesDuenos.cshtml.g.cs
 C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Duenos\ListaDuenos.cshtml.g.cs
+C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\ListaMascotas.cshtml.g.cs
+C:\Mascotas\MascotaFeliz.App\Mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\ListaVeterinarios.cshtml.g.cs
