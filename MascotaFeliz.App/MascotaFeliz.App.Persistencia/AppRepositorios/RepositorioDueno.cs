@@ -39,10 +39,7 @@ namespace MascotaFeliz.App.Persistencia
             _appContext.SaveChanges();
         }
 
-       public IEnumerable<Dueno> GetAllDuenos()
-        {
-            return GetAllDuenos_();
-        }
+       
 
         public IEnumerable<Dueno> GetDuenosPorFiltro(string filtro)
         {
@@ -57,7 +54,7 @@ namespace MascotaFeliz.App.Persistencia
             return duenos;
         }
 
-        public IEnumerable<Dueno> GetAllDuenos_()
+        public IEnumerable<Dueno> GetAllDuenos()
         {
             return _appContext.Duenos;
         }

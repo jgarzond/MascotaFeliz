@@ -13,8 +13,8 @@ namespace MascotaFeliz.App.Consola
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello!")
-;            //DeleteDueno();
-            //DeleteVeterinario();
+;            DeleteDueno();
+            DeleteVeterinario();
             //AddDueno();
             //AddVeterinario();
             //BuscarDueno(4);
@@ -37,7 +37,7 @@ namespace MascotaFeliz.App.Consola
         }
 
         public static void DeleteDueno(){
-           // _repoDueno.DeleteDueno(1);    Ingresar ID de la BD
+            _repoDueno.DeleteDueno(8);    //Ingresar ID de la BD
            // _repoDueno.DeleteDueno(2);
         }
         private static void BuscarDueno(int idDueno){
@@ -64,7 +64,7 @@ namespace MascotaFeliz.App.Consola
         }
         
         public static void DeleteVeterinario(){
-            //_repoVeterinario.DeleteVeterinario(3); Ingresar ID de la BD
+            _repoVeterinario.DeleteVeterinario(9);// Ingresar ID de la BD
         }
 
         private static void BuscarVeterinario(int idVeterinario){
