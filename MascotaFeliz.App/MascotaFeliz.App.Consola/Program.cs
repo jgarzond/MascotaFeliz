@@ -18,7 +18,7 @@ namespace MascotaFeliz.App.Consola
 ;           //DeleteDueno();
             //DeleteVeterinario();
             //AddDueno();
-            //AddVeterinario();
+            AddVeterinario();
             //BuscarDueno(4);
             //BuscarDueno(6);
             //BuscarVeterinario(5);
@@ -26,6 +26,7 @@ namespace MascotaFeliz.App.Consola
             //ListarDuenos();
             //ListarVeterinarios();
             AddMascota();
+            //ListarMascotas();
         }
         //Métodos Dueño
         private static void AddDueno(){
@@ -57,11 +58,11 @@ namespace MascotaFeliz.App.Consola
     //Métodos Veterinario
         private static void AddVeterinario(){
             var veterinario = new Veterinario{
-                Nombres = "Camilo",
-                Apellidos = "Cardona",
-                Direccion = "Encima de un puente",
-                Telefono = "9876543210",
-                TarjetaProfesional = "55667"
+                Nombres = "Alan",
+                Apellidos = "Cadena",
+                Direccion = "Calle 100",
+                Telefono = "3332225",
+                TarjetaProfesional = "10256"
             };
             _repoVeterinario.AddVeterinario(veterinario);
         }
@@ -85,10 +86,10 @@ namespace MascotaFeliz.App.Consola
         //Métodos Mascotas
         private static void AddMascota(){
             var mascota = new Mascota{
-                Nombre = "Pepe",
-                Color = "Cafe",
+                Nombre = "Pinina",
+                Color = "Blanco",
                 Especie = "Felino",
-                Raza = "Criollo",
+                Raza = "Siames",
             };
             _repoMascota.AddMascota(mascota);
         }
