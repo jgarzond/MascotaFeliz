@@ -3,3 +3,22 @@
 @{
 }
 <h1>Lista de Dueños</h1>
+<h2>Aqui va la lista de los dueños</h2>
+<table class="table">
+    <tr>
+        <td>Nombres</td>
+            <td>Apellidos</td>
+            <td>Direccion</td>
+            <td>Telefono</td>
+            <td>Correo</td>
+    </tr>
+    @foreach(var dueno in Model.listaDuenos){
+        <tr>
+            <td>@dueno.Nombres</td>
+            <td>@dueno.Apellidos</td>
+            <td>@dueno.Direccion</td>
+            <td>@dueno.Telefono</td>
+            <td>@dueno.Correo</td>
+        </tr>
+    }
+</table>
