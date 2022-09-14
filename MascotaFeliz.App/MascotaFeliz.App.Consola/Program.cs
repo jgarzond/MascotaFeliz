@@ -10,6 +10,7 @@ namespace MascotaFeliz.App.Consola
         private static IRepositorioDueno _repoDueno = new RepositorioDueno(new Persistencia.AppContext());
         private static IRepositorioVeterinario _repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
         private static IRepositorioMascota _repoMascota = new RepositorioMascota(new Persistencia.AppContext());
+        private static IRepositorioVisitaPyP _repoVisitaPyP = new RepositorioVisitaPyP(new Persistencia.AppContext());
         
         static void Main(string[] args)
         {
@@ -18,14 +19,14 @@ namespace MascotaFeliz.App.Consola
 ;           //DeleteDueno();
             //DeleteVeterinario();
             //AddDueno();
-            AddVeterinario();
+            //AddVeterinario();
             //BuscarDueno(4);
             //BuscarDueno(6);
             //BuscarVeterinario(5);
             //BuscarVeterinario(7);
             //ListarDuenos();
             //ListarVeterinarios();
-            AddMascota();
+            //AddMascota();
             //ListarMascotas();
         }
         //Métodos Dueño
@@ -110,6 +111,40 @@ namespace MascotaFeliz.App.Consola
                 Console.WriteLine(m.Nombre + " " + m.Especie + " " + m.Raza);
             }
         }
+
+        // Métodos VisitaPyP
+
+        private static void AddVisitaPyP(){
+            var visitaPyP = new VisitaPyP{
+                FechaVisita = new DateTime(2022,09,15),
+                Temperatura = 36.2f,
+                Peso = 5f,
+                FrecuenciaRespiratoria = 50f,
+                FrecuenciaCardiaca = 90f,
+                EstadoAnimo = "Alegre",
+                IdVeterinario = 5,
+                Recomendaciones = "Dar mas pollo al almuerzo"
+            };
+            _repoVisitaPyP.AddVisitaPyP(visitaPyP);
+        }
+
+        public static void DeleteVisitaPyP(){
+            //_repoMascota.DeleteMascota(1);    //Ingresar ID de la BD
+           
+        }
+
+        private static void BuscarVisitaPyP(int idVisitaPyP){
+            var visitaPyP = _repoVisitaPyP.GetVisitaPyP(idVisitaPyP);
+            Console.WriteLine(visitaPyP.FechaVisita + " " + visitaPyP.IdVeterinario + " " + visitaPyP.Recomendaciones);
+        }
+
+        private static void ListarVisitasPyP(){
+            var visitasPyP = _repoVisitaPyP.GetAllVisitasPyP();
+            foreach (VisitaPyP v in visitasPyP){
+                Console.WriteLine(v.FechaVisita + " " + v.IdVeterinario + " " + v.Recomendaciones);
+            }
+        }
+
 
     }
 }
