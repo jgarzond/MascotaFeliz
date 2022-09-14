@@ -11,12 +11,12 @@ namespace MascotaFeliz.App.Consola
         private static IRepositorioVeterinario _repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
         private static IRepositorioMascota _repoMascota = new RepositorioMascota(new Persistencia.AppContext());
         private static IRepositorioVisitaPyP _repoVisitaPyP = new RepositorioVisitaPyP(new Persistencia.AppContext());
-        
+        private static IRepositorioHistoria _repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello!")
-;           //DeleteDueno();
+            Console.WriteLine("SUCCESS");
+            //DeleteDueno();
             //DeleteVeterinario();
             //AddDueno();
             //AddVeterinario();
@@ -31,6 +31,9 @@ namespace MascotaFeliz.App.Consola
             //AddVisitaPyP();
             //BuscarVisitaPyP(1);
             //ListarVisitasPyP();
+            //AddHistoria();
+            //BuscarHistoria(1);
+            //ListarHistorias();
         }
         //Métodos Dueño
         private static void AddDueno(){
@@ -132,7 +135,7 @@ namespace MascotaFeliz.App.Consola
         }
 
         public static void DeleteVisitaPyP(){
-            //_repoMascota.DeleteMascota(1);    //Ingresar ID de la BD
+            //_repoMascota.DeleteVisitaPyP(1);    //Ingresar ID de la BD
            
         }
 
@@ -147,6 +150,35 @@ namespace MascotaFeliz.App.Consola
                 Console.WriteLine(v.FechaVisita + " " + v.IdVeterinario + " " + v.Recomendaciones);
             }
         }
+
+        //Metodos Historia
+        
+        private static void AddHistoria(){
+            var historia = new Historia{
+                FechaInicial = new DateTime(2022,09,10,8,0,0),
+                
+            };
+            _repoHistoria.AddHistoria(historia);
+        }
+
+        public static void DeleteHistoria(){
+            //_repoMascota.DeleteHistoria(1);    //Ingresar ID de la BD
+           
+        }
+
+        private static void BuscarHistoria(int idHistoria){
+            var historia = _repoHistoria.GetHistoria(idHistoria);
+            Console.WriteLine(historia.FechaInicial);
+        }
+
+        private static void ListarHistorias(){
+            var historias = _repoHistoria.GetAllHistorias();
+            foreach (Historia h in historias){
+                Console.WriteLine(h.Id + " "+ h.FechaInicial);
+            }
+        }
+
+        
 
 
     }
