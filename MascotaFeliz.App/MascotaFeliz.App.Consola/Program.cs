@@ -28,6 +28,9 @@ namespace MascotaFeliz.App.Consola
             //ListarVeterinarios();
             //AddMascota();
             //ListarMascotas();
+            //AddVisitaPyP();
+            //BuscarVisitaPyP(1);
+            //ListarVisitasPyP();
         }
         //Métodos Dueño
         private static void AddDueno(){
@@ -116,14 +119,14 @@ namespace MascotaFeliz.App.Consola
 
         private static void AddVisitaPyP(){
             var visitaPyP = new VisitaPyP{
-                FechaVisita = new DateTime(2022,09,15),
-                Temperatura = 36.2f,
-                Peso = 5f,
-                FrecuenciaRespiratoria = 50f,
-                FrecuenciaCardiaca = 90f,
-                EstadoAnimo = "Alegre",
-                IdVeterinario = 5,
-                Recomendaciones = "Dar mas pollo al almuerzo"
+                FechaVisita = new DateTime(2022,09,15,8,30,0),
+                Temperatura = 36f,
+                Peso = 7f,
+                FrecuenciaRespiratoria = 55f,
+                FrecuenciaCardiaca = 89f,
+                EstadoAnimo = "Normal",
+                IdVeterinario = 7,
+                Recomendaciones = "Dar mas whiskas"
             };
             _repoVisitaPyP.AddVisitaPyP(visitaPyP);
         }
