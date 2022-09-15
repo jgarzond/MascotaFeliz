@@ -8,22 +8,18 @@
     <tr>
         <td>Nombres</td>
         <td>Apellidos</td>
-        <td>Direccion</td>
-        <td>Telefono</td>
-        <td>Correo</td>
     </tr>
     @foreach (var dueno in Model.listaDuenos)
     {
         <tr>
-            <td>@dueno.Id</td>
             <td>@dueno.Nombres</td>
             <td>@dueno.Apellidos</td>
-            <td>@dueno.Direccion</td>
-            <td>@dueno.Telefono</td>
-            <td>@dueno.Correo</td>
-            <!--<td><a class="btn btn-primary table-btn" asp-page=".\DetallesDuenos" asp-route-duenoID="@dueno.Id">
-                    Detalle Dueño
-                </a></td>-->
+            <td><a class="btn btn-primary table-btn" asp-page=".\DetallesDuenos" asp-route-duenoID="@dueno.Id">
+                    Detalles
+                </a></td>
+            <td><a class="btn btn-primary table-btn" asp-page=".\EditarDuenos" asp-route-duenoID="@dueno.Id">
+                    Editar
+                </a></td>
     </tr>
     }
 </table>
