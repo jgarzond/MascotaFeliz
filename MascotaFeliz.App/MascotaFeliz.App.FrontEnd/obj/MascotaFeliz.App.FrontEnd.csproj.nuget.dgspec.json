@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\MascotaFeliz.App.FrontEnd.csproj": {}
+    "C:\\Mascotas\\MascotaFeliz.App\\mascotafeliz.app.frontend\\MascotaFeliz.App.FrontEnd.csproj": {}
   },
   "projects": {
     "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
@@ -57,14 +57,14 @@
         }
       }
     },
-    "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\MascotaFeliz.App.FrontEnd.csproj": {
+    "C:\\Mascotas\\MascotaFeliz.App\\mascotafeliz.app.frontend\\MascotaFeliz.App.FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\MascotaFeliz.App.FrontEnd.csproj",
+        "projectUniqueName": "C:\\Mascotas\\MascotaFeliz.App\\mascotafeliz.app.frontend\\MascotaFeliz.App.FrontEnd.csproj",
         "projectName": "MascotaFeliz.App.FrontEnd",
-        "projectPath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\MascotaFeliz.App.FrontEnd.csproj",
+        "projectPath": "C:\\Mascotas\\MascotaFeliz.App\\mascotafeliz.app.frontend\\MascotaFeliz.App.FrontEnd.csproj",
         "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-        "outputPath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\obj\\",
+        "outputPath": "C:\\Mascotas\\MascotaFeliz.App\\mascotafeliz.app.frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config"

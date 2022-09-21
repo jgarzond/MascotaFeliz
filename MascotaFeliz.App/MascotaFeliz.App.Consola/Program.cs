@@ -21,9 +21,9 @@ namespace MascotaFeliz.App.Consola
             //AddDueno();
             //AddVeterinario();
             //BuscarDueno(4);
-            //BuscarDueno(6);
+            BuscarDueno(11);
             //BuscarVeterinario(5);
-            //BuscarVeterinario(7);
+            BuscarVeterinario(12);
             //ListarDuenos();
             //ListarVeterinarios();
             //AddMascota();
@@ -38,11 +38,11 @@ namespace MascotaFeliz.App.Consola
         //Métodos Dueño
         private static void AddDueno(){
             var dueno = new Dueno{
-                Nombres = "Alejandra",
-                Apellidos = "Echeverria",
-                Direccion = "Calle 6",
-                Telefono = "3134",
-                Correo = "alejandra@gmail.com"
+                Nombres = "German",
+                Apellidos = "Garz",
+                Direccion = "Calle 6s",
+                Telefono = "300",
+                Correo = "german@gmail.com"
             };
             _repoDueno.AddDueno(dueno);
         }
@@ -65,11 +65,11 @@ namespace MascotaFeliz.App.Consola
     //Métodos Veterinario
         private static void AddVeterinario(){
             var veterinario = new Veterinario{
-                Nombres = "Alan",
-                Apellidos = "Cadena",
-                Direccion = "Calle 100",
-                Telefono = "3332225",
-                TarjetaProfesional = "10256"
+                Nombres = "Aquiles",
+                Apellidos = "Bailo",
+                Direccion = "Calle 300",
+                Telefono = "350",
+                TarjetaProfesional = "1000"
             };
             _repoVeterinario.AddVeterinario(veterinario);
         }
