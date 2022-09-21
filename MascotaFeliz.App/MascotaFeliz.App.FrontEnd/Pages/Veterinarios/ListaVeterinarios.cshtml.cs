@@ -10,9 +10,14 @@ using MascotaFeliz.App.Persistencia;
 namespace MascotaFeliz.App.FrontEnd.Pages
 {
     public class ListaVeterinariosModel : PageModel{
-        private static IRepositorioVeterinario _repoVeterinario= new RepositorioVeterinario(new Persistencia.AppContext());
+        private readonly IRepositorioVeterinario _repoVeterinario;
 
         public IEnumerable<Veterinario> listaVeterinarios {get;set;}
+
+        public ListaVeterinariosModel(){
+            this._repoVeterinario= new RepositorioVeterinario(new Persistencia.AppContext());
+
+        }
 
         public void OnGet(){
             listaVeterinarios=_repoVeterinario.GetAllVeterinarios();
