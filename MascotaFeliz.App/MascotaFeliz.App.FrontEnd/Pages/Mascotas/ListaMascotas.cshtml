@@ -8,8 +8,6 @@
     <tr>
         <td>Id</td>
         <td>Nombre</td>
-        <td>Color</td>
-        <td>Especie</td>
         <td>Raza</td>
     </tr>
     @foreach (var mascota in Model.listaMascotas)
@@ -17,12 +15,13 @@
         <tr>
             <td>@mascota.Id</td>
             <td>@mascota.Nombre</td>
-            <td>@mascota.Color</td>
-            <td>@mascota.Especie</td>
             <td>@mascota.Raza</td>
-            <!--<td><a class="btn btn-primary table-btn" asp-page=".\DetallesDuenos" asp-route-duenoID="@mascota.Id">
-                    Detalle Dueño
-                </a></td>-->
+            <td><a class="btn btn-primary table-btn" asp-page="./DetallesMascotas" asp-route-mascotaId="@mascota.Id">
+                    Detalles
+                </a></td>
+            <td><a class="btn btn-primary table-btn" asp-page="./EditarMascotas" asp-route-duenoId="@mascota.Id">
+                    Editar
+                </a></td>
     </tr>
     }
 </table>

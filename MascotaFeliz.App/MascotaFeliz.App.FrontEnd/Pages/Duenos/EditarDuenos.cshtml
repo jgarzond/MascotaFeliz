@@ -1,4 +1,30 @@
 ﻿@page
 @model MascotaFeliz.App.FrontEnd.Pages.EditarDuenosModel
 @{
+    int duenoId=Model.dueno.Id;
 }
+
+  <div id="cabecera">
+    <h1>Registro/Edición de Dueño</h1>
+    <h3>Ingrese los datos de los Dueños</h3>
+  </div>
+  <form method="post">
+    <div class="form-group">
+        <input type="hidden" asp-for = "dueno.Id"/>
+        <label asp-for="dueno.Nombres"></label>
+        <input asp-for="dueno.Nombres" class="form-control"/>
+        <label asp-for="dueno.Apellidos"></label>
+        <input asp-for="dueno.Apellidos" class="form-control"/>
+        <label asp-for="dueno.Direccion"></label>
+        <input asp-for="dueno.Direccion" class="form-control"/>
+        <label asp-for="dueno.Telefono"></label>
+        <input asp-for="dueno.Telefono" class="form-control"/>
+        <label asp-for="dueno.Correo"></label>
+        <input asp-for="dueno.Correo" class="form-control"/>
+        <p></p>
+        <h3>Presione para guardar el registro</h3>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </form>
+
+<div><a asp-page="./ListaDuenos" class="btn-default">Lista Dueños</a></div>
