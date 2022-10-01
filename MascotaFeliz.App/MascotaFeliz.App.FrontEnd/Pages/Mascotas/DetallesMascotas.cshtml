@@ -7,7 +7,7 @@
     <div>COLOR: @Model.mascota.Color</div>
     <div>ESPECIE: @Model.mascota.Especie</div>
     <div>RAZA: @Model.mascota.Raza</div>
-    //<div> DUENO: </div>
-    //<div> VETERINARIO: </div>
+    <div> DUENO: @Model.mascota.Dueno.Nombres </div>
+    <div> VETERINARIO: @Model.mascota.Veterinario.Nombres </div>
     <div><a asp-page="./ListaMascotas" class="btn-default">Lista Mascotas</a></div>
 }

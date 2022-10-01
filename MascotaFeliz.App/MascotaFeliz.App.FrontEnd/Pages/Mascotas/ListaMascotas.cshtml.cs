@@ -7,18 +7,21 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using MascotaFeliz.App.Dominio;
 using MascotaFeliz.App.Persistencia;
 
-namespace MascotaFeliz.App.FrontEnd.Pages{
-    public class ListaMascotasModel : PageModel{
-        private readonly IRepositorioMascota _repoMascota;
+namespace MascotaFeliz.App.Frontend.Pages
+{
+    public class ListaMascotasModel : PageModel
+    {
+        private readonly IRepositorioMascota _repoMascota; 
+        public IEnumerable<Mascota> listaMascotas {get;set;} 
 
-        public IEnumerable<Mascota> listaMascotas {get;set;}
-
-        public ListaMascotasModel(){
-            this._repoMascota= new RepositorioMascota(new Persistencia.AppContext());
+        public ListaMascotasModel()
+        {
+            this._repoMascota = new RepositorioMascota(new Persistencia.AppContext());
         }
 
-        public void OnGet(){
-            listaMascotas=_repoMascota.GetAllMascotas();
+        public void OnGet()
+        {
+            listaMascotas = _repoMascota.GetAllMascotas();
         }
     }
 }

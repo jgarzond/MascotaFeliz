@@ -40,38 +40,35 @@ namespace MascotaFeliz.App.Persistencia
         }
 
        
-       /* public IEnumerable<Historia> GetHistoriasPorFiltro(int filtro)
+       public IEnumerable<Historia> GetAllHistorias()
         {
-            var historias = GetAllHistorias(); // Obtiene todos los saludos
-            if (historias != null)  //Si se tienen saludos
-            {
-                if (!int.IsNullOrEmpty(filtro)) // Si el filtro tiene algun valor
-                {
-                    historias = historias.Where(s => s.IdVeterinario.Contains(filtro));
-                }
-            }
-            return historias;
-        }*/
+            return _appContext.Historias; 
+        }
 
-        public IEnumerable<Historia> GetAllHistorias()
+        IEnumerable<VisitaPyP> IRepositorioHistoria.GetVisitasHistoria(int idHistoria)
         {
-            return _appContext.Historias;
+            var historia = _appContext.Historias.Where(h => h.Id == idHistoria)
+                                                .Include(h => h.VisitasPyP)
+                                                .FirstOrDefault();
+            return historia.VisitasPyP;
         }
 
         public Historia GetHistoria(int idHistoria)
         {
-            return _appContext.Historias.FirstOrDefault(v => v.Id == idHistoria);
+            return _appContext.Historias.Include(a => a.VisitasPyP).FirstOrDefault(d => d.Id == idHistoria);
         }
 
         public Historia UpdateHistoria(Historia historia)
         {
-            var historiaEncontrada = _appContext.Historias.FirstOrDefault(h => h.Id == historia.Id);
-            if (historiaEncontrada != null)
+            var historiaEncontrado = _appContext.Historias.FirstOrDefault(d => d.Id == historia.Id);
+            if (historiaEncontrado != null)
             {
-                historiaEncontrada.FechaInicial = historia.FechaInicial;
+                historiaEncontrado.FechaInicial = historia.FechaInicial;
+                historiaEncontrado.VisitasPyP = historia.VisitasPyP;
+
                 _appContext.SaveChanges();
             }
-            return historiaEncontrada;
+            return historiaEncontrado;
         }     
     }
 }

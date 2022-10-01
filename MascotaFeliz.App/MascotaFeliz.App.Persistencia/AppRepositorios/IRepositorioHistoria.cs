@@ -13,8 +13,8 @@ namespace MascotaFeliz.App.Persistencia
         Historia UpdateHistoria(Historia historia);
         void DeleteHistoria(int idHistoria);
         Historia GetHistoria(int idHistoria);
-        //IEnumerable<Historia> GetHistoriasPorFiltro(int filtro);
-    }
+        IEnumerable<VisitaPyP> GetVisitasHistoria(int idHistoria);
+        }
 }
 
 //Consola

@@ -15,7 +15,8 @@
         <tr>
             <td>@mascota.Id</td>
             <td>@mascota.Nombre</td>
-            <td>@mascota.Raza</td>
+            <td>@mascota.Dueno.idDueno</td>
+            <td>@mascota.Dueno.Nombres</td>
             <td><a class="btn btn-primary table-btn" asp-page="./DetallesMascotas" asp-route-mascotaId="@mascota.Id">
                     Detalles
                 </a></td>
