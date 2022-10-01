@@ -88,3 +88,9 @@ C:\Mascotas\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\R
 C:\Mascotas\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\EditarMascotas.cshtml.g.cs
 C:\Mascotas\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\DetallesVeterinarios.cshtml.g.cs
 C:\Mascotas\MascotaFeliz.App\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\EditarVeterinarios.cshtml.g.cs
+C:\Mascotas\mascotafeliz.app\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\HistoriasClinicas.cshtml.g.cs
+C:\Mascotas\mascotafeliz.app\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Duenos\EliminarDuenos.cshtml.g.cs
+C:\Mascotas\mascotafeliz.app\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\EliminarMascotas.cshtml.g.cs
+C:\Mascotas\mascotafeliz.app\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\EliminarVeterinarios.cshtml.g.cs
+C:\Mascotas\mascotafeliz.app\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\HistoriaMascotas.cshtml.g.cs
+C:\Mascotas\mascotafeliz.app\mascotafeliz.app.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\VisitasMascotas.cshtml.g.cs
