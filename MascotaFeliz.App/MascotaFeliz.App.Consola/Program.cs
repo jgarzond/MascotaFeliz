@@ -21,9 +21,9 @@ namespace MascotaFeliz.App.Consola
             //AddDueno();
             //AddVeterinario();
             //BuscarDueno(4);
-            BuscarDueno(11);
+            //BuscarDueno(11);
             //BuscarVeterinario(5);
-            BuscarVeterinario(12);
+            //BuscarVeterinario(12);
             //ListarDuenos();
             //ListarVeterinarios();
             //AddMascota();
@@ -34,6 +34,7 @@ namespace MascotaFeliz.App.Consola
             //AddHistoria();
             //BuscarHistoria(1);
             //ListarHistorias();
+            DeleteMascota();
         }
         //Métodos Dueño
         private static void AddDueno(){
@@ -102,7 +103,8 @@ namespace MascotaFeliz.App.Consola
         }
 
         public static void DeleteMascota(){
-            //_repoMascota.DeleteMascota(1);    //Ingresar ID de la BD
+            _repoMascota.DeleteMascota(1);  
+            _repoMascota.DeleteMascota(2);  //Ingresar ID de la BD
            
         }
 

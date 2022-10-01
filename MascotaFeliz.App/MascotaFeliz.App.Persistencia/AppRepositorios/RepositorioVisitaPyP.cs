@@ -69,7 +69,7 @@ namespace MascotaFeliz.App.Persistencia
                 visitaPyPEncontrado.FrecuenciaRespiratoria = visitaPyP.FrecuenciaRespiratoria;
                 visitaPyPEncontrado.FrecuenciaCardiaca = visitaPyP.FrecuenciaCardiaca;
                 visitaPyPEncontrado.EstadoAnimo = visitaPyP.EstadoAnimo;
-                visitaPyPEncontrado.idVeterinario = visitaPyP.idVeterinario;
+                visitaPyPEncontrado.IdVeterinario = visitaPyP.IdVeterinario;
                 visitaPyPEncontrado.Recomendaciones = visitaPyP.Recomendaciones;
 
 

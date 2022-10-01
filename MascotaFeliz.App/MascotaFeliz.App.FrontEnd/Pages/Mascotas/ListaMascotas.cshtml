@@ -6,23 +6,25 @@
 <h2>Aqui va la lista de las mascotas</h2>
 <table class="table">
     <tr>
-        <td>Id</td>
+        <td>ID</td>
         <td>Nombre</td>
-        <td>Raza</td>
+        <td>ID Dueño</td>
+        <td>Nombre Dueño</td>
     </tr>
     @foreach (var mascota in Model.listaMascotas)
     {
         <tr>
             <td>@mascota.Id</td>
             <td>@mascota.Nombre</td>
-            <td>@mascota.Dueno.idDueno</td>
+            <td>@mascota.Dueno.Id</td>
             <td>@mascota.Dueno.Nombres</td>
             <td><a class="btn btn-primary table-btn" asp-page="./DetallesMascotas" asp-route-mascotaId="@mascota.Id">
                     Detalles
                 </a></td>
-            <td><a class="btn btn-primary table-btn" asp-page="./EditarMascotas" asp-route-duenoId="@mascota.Id">
+            <td><a class="btn btn-primary table-btn" asp-page="./EditarMascotas" asp-route-mascotaId="@mascota.Id">
                     Editar
                 </a></td>
     </tr>
     }
 </table>
+<a class = "btn btn-primary table-btn" asp-page="./EditarMascotas" class="btn-default">Agregar Mascota</a>

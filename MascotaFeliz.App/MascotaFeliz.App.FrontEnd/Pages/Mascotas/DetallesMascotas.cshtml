@@ -5,9 +5,10 @@
     <div>ID: @Model.mascota.Id</div>
     <div>NOMBRE: @Model.mascota.Nombre</div>
     <div>COLOR: @Model.mascota.Color</div>
-    <div>ESPECIE: @Model.mascota.Especie</div>
     <div>RAZA: @Model.mascota.Raza</div>
-    <div> DUENO: @Model.mascota.Dueno.Nombres </div>
-    <div> VETERINARIO: @Model.mascota.Veterinario.Nombres </div>
+    <div>ESPECIE: @Model.mascota.Especie</div>
+    <div>DUEÑO: @Model.mascota.Dueno.Id</div>
+    <div>VETERINARIO: @Model.mascota.Veterinario.Nombres</div>
     <div><a asp-page="./ListaMascotas" class="btn-default">Lista Mascotas</a></div>
+    
 }

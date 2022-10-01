@@ -1,5 +1,5 @@
 ﻿@page
-@model MascotaFeliz.App.Frontend.Pages.EditarMascotasModel
+@model MascotaFeliz.App.FrontEnd.Pages.EditarMascotasModel
 @{
     
 }
@@ -23,7 +23,7 @@
             <option value="0">Seleccione un Dueño</option>
             @foreach (var dueno in Model.listaDuenos)
             {
-                <option value="@dueno.Id">@dueno.idDueno @dueno.Nombres @dueno.Apellidos</option>
+                <option value="@dueno.Id">@dueno.Id @dueno.Nombres @dueno.Apellidos</option>
             }
         </select>
 
@@ -36,8 +36,9 @@
             }
         </select>
 
-        <button type="submit" class="btn btn-primary">Grabar</button>
+        
     </div>
+    <button type="submit" class="btn btn-primary">Grabar</button>
 </form>
 
 <a asp-page="./ListaMascotas" class="btn-default">Lista de Mascotas </a>
