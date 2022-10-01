@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de Mascotas</title>
+  <link rel="shortcut icon" href="assets/icono.png">
+  <title>Mascota Feliz</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <style>
   .formulario {
@@ -19,67 +22,42 @@
   }
 </style>
 
-<body>
-  <div id="cabecera">
-    <!-- Aqui va una imagen; hay que subirla en la carpeta de front 
-      
-      <img src="../objetos/logo.gif" alt="Logo de la página" width="15%" /><-->
-    <h1>Registro de Mascota</h1>
-    <h2>Ingrese los datos de la mascota</h2>
+<body class="Registros__mascota">
+  <div class="container-form sign-up">
+      <div class="inicio">
+          <div class="principal">
+              <h2>Registro de Mascota</h2>
+              <p>Si Desea volver a la pagina principal dar click aqui</p>
+              <a href="PaginaPrincipal.html"><button class="sign-up-btn">Inicio</button></a>
+              
+          </div>
+      </div>
+      <form class="formulario">
+          <h2 class="formulario__tittle">Ingrese los datos de la mascota</h2>
+          <div class="iconos">
+              <div class="border__icons">
+                  <i class="fa-brands fa-facebook-f footer__icon "></i>
+              </div>
+              <div class="border__icons">
+                  <i class="fa-brands fa-twitter footer__icon " ></i>
+              </div>
+              <div class="border__icons">
+                  <i class="fa-brands fa-whatsapp footer__icon" ></i>
+              </div>
+          </div>
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Color">
+          <input type="text" placeholder="Especie">
+          <input type="text" placeholder="Raza">
+          <input type="text" placeholder="Dueño">
+          <input type="text" placeholder="Veterinaria">
+          <h3>Presione para guardar el registro</h3>
+          <button class="sign-in-btn">Registrar Dueño</button>
+      </form>
+
+      <script src="https://kit.fontawesome.com/578d2a472d.js" crossorigin="anonymous"></script>
   </div>
-  <div class="formulario">
-    <form action="">
-      <!--
-<p>Nombre: <input type="text" name="nombre" /></p>
-      <p>Color: <input type="text" name="color" /></p>
-      <p>Especie: <input type="text" name="especie" /></p>
-      <p>Raza: <input type="text" name="raza" /></p>
-      <p>Dueño: <input type="text" name="dueño" /></p>
-      <p>Veterinario: <input type="text" name="veterinario" /></p>
-      <p>Historia: <input type="text" name="historia" /></p>
-
-        -->
-      <div>
-        <label for="nombre">Nombre</label>
-        <input id="nombre" type="text">
-      </div>
-
-      <div>
-        <label for="color">Color</label>
-        <input id="color" type="text">
-      </div>
-
-      <div>
-        <label for="especie">Especie</label>
-        <input id="especie" type="text">
-      </div>
-
-      <div>
-        <label for="raza">Raza</label>
-        <input id="raza" type="text">
-      </div>
-
-      <div>
-        <label for="dueno">Dueño</label>
-        <input id="dueno" type="text">
-      </div>
-
-      <div>
-        <label for="veterinario">Veterinario</label>
-        <input id="veterinario" type="text">
-      </div>
-      <!--
-      <div>
-        <label for="idHistoria">No. Historia Clínica</label>
-        <input id="idHistoria" type="number">
-      </div>
-      -->
-    </form>
-  </div>
-
-  <h3>Presione para guardar el registro</h3>
-  <p><input type="submit" value="Registrar" /> <a href="PaginaPrincipal.html"><input type="button" value="Inicio"></a></p>
-  
-</body>
 
 </html>
+
+

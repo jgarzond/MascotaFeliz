@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de Visitas</title>
+  <link rel="shortcut icon" href="assets/icono.png">
+  <title>Mascota Feliz</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <style>
   .formulario {
@@ -19,54 +22,44 @@
   }
 </style>
 
-<body>
-  <div id="cabecera">
-    <h1>Registro de Visitas a Mascotas</h1>
-    <h2>Ingrese los datos la Visita</h2>
+<body class="Registros__visita">
+  <div class="container-form sign-up">
+      <div class="inicio">
+          <div class="principal">
+              <h2>Registro de Visita</h2>
+              <p>Si Desea volver a la pagina principal dar click aqui</p>
+              <a href="PaginaPrincipal.html"><button class="sign-up-btn">Inicio</button></a>
+              
+          </div>
+      </div>
+      <form class="formulario">
+          <h2 class="formulario__tittle">Datos de la Visita</h2>
+          <div class="iconos">
+              <div class="border__icons">
+                  <i class="fa-brands fa-facebook-f footer__icon "></i>
+              </div>
+              <div class="border__icons">
+                  <i class="fa-brands fa-twitter footer__icon " ></i>
+              </div>
+              <div class="border__icons">
+                  <i class="fa-brands fa-whatsapp footer__icon" ></i>
+              </div>
+          </div>
+          <input type="text" placeholder="Fecha Visita">
+          <input type="text" placeholder="Temperatura">
+          <input type="text" placeholder="Peso">
+          <input type="text" placeholder="Frecuencia Cardiaca">
+          <input type="text" placeholder="Frecuencia Respiratoria">
+          <input type="text" placeholder="ID Veterinario">
+          <textarea class="fondo" name="recomendaciones" placeholder="Recomendaciones"></textarea>
+          
+
+          <h3>Presione para guardar el registro</h3>
+          <button class="sign-in-btn">Registrar Dueño</button>
+      </form>
+
+      <script src="https://kit.fontawesome.com/578d2a472d.js" crossorigin="anonymous"></script>
   </div>
-  <div class="formulario">
-    <form action="">
-      <div>
-        <label for="fechaVisita">Fecha Visita</label>
-        <input id="fechaVisita" type="datetime">
-      </div>
-
-      <div>
-        <label for="temperatura">Temperatura</label>
-        <input id="temperatura" type="number">
-      </div>
-
-      <div>
-        <label for="peso">Peso</label>
-        <input id="peso" type="number">
-      </div>
-
-      <div>
-        <label for="frecuenciaCardiaca">Frecuencia Cardiaca</label>
-        <input id="frecuenciaCardiaca" type="number">
-      </div>
-
-      <div>
-        <label for="frecuenciaRespiratoria">Frecuencia Respiratoria</label>
-        <input id="frecuenciaRespiratoria" type="number">
-      </div>
-
-      <div>
-        <label for="idVeterianrio">ID Veterinario</label>
-        <input id="idVeterianrio" type="number">
-      </div>
-
-      <div>
-        <label for="recomendaciones">Recomendaciones</label>
-        <textarea name="recomendaciones"></textarea>
-      </div>
-
-    </form>
-  </div>
-
-  <h3>Presione para guardar el registro</h3>
-  <p><input type="submit" value="Registrar" /> <a href="PaginaPrincipal.html"><input type="button" value="Inicio"></a>
-  </p>
-</body>
 
 </html>
+
