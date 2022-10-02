@@ -14,6 +14,8 @@ namespace MascotaFeliz.App.Frontend.Pages
         private readonly IRepositorioMascota _repoMascota;
         private readonly IRepositorioDueno _repoDueno;
         private readonly IRepositorioVeterinario _repoVeterinario;
+        private readonly IRepositorioHistoria _repoHistoria;
+
         DateTime FechaInicial;
         [BindProperty]
         public Mascota mascota { get; set; }
@@ -22,18 +24,21 @@ namespace MascotaFeliz.App.Frontend.Pages
         public Historia historia { get; set; }
         public IEnumerable<Dueno> listaDuenos { get; set; }
         public IEnumerable<Veterinario> listaVeterinarios { get; set; }
+        public IEnumerable<Historia> listaHistorias { get; set; }
 
         public EditarMascotasModel()
         {
             this._repoMascota = new RepositorioMascota(new Persistencia.AppContext());
             this._repoDueno = new RepositorioDueno(new Persistencia.AppContext());
             this._repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
+            this._repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
         }
 
         public void OnGet(int? mascotaId)
         {
             listaDuenos = _repoDueno.GetAllDuenos();
             listaVeterinarios = _repoVeterinario.GetAllVeterinarios();
+            listaHistorias = _repoHistoria.GetAllHistorias();
 
             if (mascotaId.HasValue)
             {
@@ -53,8 +58,7 @@ namespace MascotaFeliz.App.Frontend.Pages
             if (ModelState.IsValid)
             {
                 dueno = _repoDueno.GetDueno(duenoId);
-                veterinario = _repoVeterinario.GetVeterinario(veterinarioId);
-                
+                veterinario = _repoVeterinario.GetVeterinario(veterinarioId); 
                 historia = new Historia
                 {
                     FechaInicial = DateTime.Today
