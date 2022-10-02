@@ -5979,11 +5979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mascotas\\mascotafeliz.app\\mascotafeliz.app.frontend\\MascotaFeliz.App.FrontEnd.csproj",
+      "projectUniqueName": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.FrontEnd\\MascotaFeliz.App.FrontEnd.csproj",
       "projectName": "MascotaFeliz.App.FrontEnd",
-      "projectPath": "C:\\Mascotas\\mascotafeliz.app\\mascotafeliz.app.frontend\\MascotaFeliz.App.FrontEnd.csproj",
+      "projectPath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.FrontEnd\\MascotaFeliz.App.FrontEnd.csproj",
       "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-      "outputPath": "C:\\Mascotas\\mascotafeliz.app\\mascotafeliz.app.frontend\\obj\\",
+      "outputPath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6000,11 +6000,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Mascotas\\mascotafeliz.app\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
-              "projectPath": "C:\\Mascotas\\mascotafeliz.app\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj"
+            "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
+              "projectPath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj"
             },
-            "C:\\Mascotas\\mascotafeliz.app\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj": {
-              "projectPath": "C:\\Mascotas\\mascotafeliz.app\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj"
+            "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj": {
+              "projectPath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj"
             }
           }
         }
